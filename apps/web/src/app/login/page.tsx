@@ -23,7 +23,7 @@ export default function LoginPage() {
 
     let result;
     if (mode === 'signup') {
-      result = await supabase.auth.signUp({ email, options: { emailRedirectTo: redirectTo.toString() } });
+      result = await supabase.auth.signInWithOtp({ email, options: { emailRedirectTo: redirectTo.toString(), shouldCreateUser: true } });
     } else {
       result = await supabase.auth.signInWithOtp({ email, options: { emailRedirectTo: redirectTo.toString() } });
     }
