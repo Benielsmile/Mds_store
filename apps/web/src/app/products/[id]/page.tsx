@@ -36,10 +36,7 @@ export default async function ProductDetailPage(props: { params: Promise<{ id: s
       <main className="page-main" style={{ paddingTop: '8rem', paddingBottom: '5rem' }}>
         <div className="responsive-container">
           {/* Back link */}
-          <Link href="/products" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', color: 'var(--color-text-secondary)', textDecoration: 'none', fontSize: '0.85rem', marginBottom: '2.5rem', transition: 'color 0.2s' }}
-            onMouseEnter={e => e.currentTarget.style.color = 'var(--color-accent-light)'}
-            onMouseLeave={e => e.currentTarget.style.color = 'var(--color-text-secondary)'}
-          >
+          <Link href="/products" className="back-link" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', color: 'var(--color-text-secondary)', textDecoration: 'none', fontSize: '0.85rem', marginBottom: '2.5rem', transition: 'color 0.2s' }}>
             <ArrowLeft size={15} /> Back to Products
           </Link>
 

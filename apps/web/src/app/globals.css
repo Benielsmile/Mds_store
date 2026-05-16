@@ -252,6 +252,10 @@ img {
   color: var(--color-text-primary);
 }
 
+.back-link:hover {
+  color: var(--color-accent-light) !important;
+}
+
 .btn-danger {
   display: inline-flex;
   align-items: center;
@@ -785,6 +789,52 @@ select.input-field {
 .responsive-table-wrap {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+}
+
+/* ── Admin table responsive styles ── */
+.admin-th, .admin-td {
+  white-space: nowrap;
+}
+
+@media (max-width: 540px) {
+  .admin-td { font-size: 0.78rem !important; padding: 0.625rem 0.5rem !important; }
+  .admin-th { font-size: 0.68rem !important; padding: 0.625rem 0.5rem !important; }
+  .admin-user-avatar { width: 30px !important; height: 30px !important; font-size: 0.75rem !important; }
+  .admin-email-text { max-width: 100px; overflow: hidden; text-overflow: ellipsis; display: inline-block; vertical-align: middle; }
+  .admin-td-mono { font-size: 0.68rem !important; }
+}
+
+@media (max-width: 450px) {
+  .admin-td { font-size: 0.7rem !important; padding: 0.5rem 0.375rem !important; }
+  .admin-th { font-size: 0.6rem !important; padding: 0.5rem 0.375rem !important; letter-spacing: 0.04em !important; }
+  .admin-user-avatar { width: 26px !important; height: 26px !important; font-size: 0.65rem !important; }
+  .admin-email-text { max-width: 80px; }
+  .admin-td-mono { font-size: 0.6rem !important; }
+}
+
+@media (max-width: 360px) {
+  .admin-td { font-size: 0.6rem !important; padding: 0.375rem 0.25rem !important; }
+  .admin-th { font-size: 0.55rem !important; padding: 0.375rem 0.25rem !important; letter-spacing: 0.03em !important; }
+  .admin-user-avatar { width: 22px !important; height: 22px !important; font-size: 0.55rem !important; }
+  .admin-email-text { max-width: 60px; }
+  .admin-td-mono { font-size: 0.55rem !important; }
+}
+
+@media (max-width: 280px) {
+  .admin-td { font-size: 0.5rem !important; padding: 0.25rem 0.2rem !important; }
+  .admin-th { font-size: 0.45rem !important; padding: 0.25rem 0.2rem !important; }
+  .admin-user-avatar { width: 18px !important; height: 18px !important; font-size: 0.45rem !important; }
+  .admin-email-text { max-width: 50px; }
+  .admin-td-mono { font-size: 0.45rem !important; }
+}
+
+@media (max-width: 230px) {
+  .admin-td { font-size: 0.4rem !important; padding: 0.2rem 0.15rem !important; }
+  .admin-th { font-size: 0.38rem !important; padding: 0.2rem 0.15rem !important; letter-spacing: 0.02em !important; }
+  .admin-user-avatar { width: 14px !important; height: 14px !important; font-size: 0.35rem !important; }
+  .admin-email-text { max-width: 40px; }
+  .admin-td-mono { font-size: 0.38rem !important; }
+  .badge { font-size: 0.4rem !important; padding: 0.1rem 0.25rem !important; }
 }
 
 /* ── Admin hero grid ── */

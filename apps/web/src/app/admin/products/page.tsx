@@ -166,7 +166,7 @@ export default function AdminProductsPage() {
     } catch (e) { toast.error(e instanceof Error ? e.message : 'Something went wrong'); }
   };
 
-  const filtered = products.filter(p => p.title.toLowerCase().includes(search.toLowerCase()));
+  const filtered = products.filter(p => p.isActive && p.title.toLowerCase().includes(search.toLowerCase()));
 
   return (
     <div className="admin-main" suppressHydrationWarning>

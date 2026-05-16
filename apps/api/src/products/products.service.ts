@@ -48,8 +48,7 @@ export class ProductsService {
 
   async remove(id: string) {
     const [deletedProduct] = await this.db
-      .update(products)
-      .set({ isActive: false, updatedAt: new Date() })
+      .delete(products)
       .where(eq(products.id, id))
       .returning();
 

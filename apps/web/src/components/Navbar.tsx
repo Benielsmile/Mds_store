@@ -169,13 +169,25 @@ export default function Navbar({ user }: NavbarProps) {
             { href: '/cart', label: `Cart${count > 0 ? ` (${count})` : ''}` },
             ...(isAdmin(user) ? [{ href: '/admin', label: 'Dashboard' }] : []),
             ...(user ? [{ href: '/orders', label: 'My Orders' }] : []),
-          ].map(({ href, label }) => (
-            <Link key={href} href={href} onClick={() => setMobileOpen(false)}
-              style={{ display: 'flex', alignItems: 'center', padding: '0.75rem 0.875rem', borderRadius: 10, textDecoration: 'none', fontSize: '0.9rem', fontWeight: 500, color: 'var(--color-text-secondary)', transition: 'all 0.15s' }}
-              onMouseEnter={e => { e.currentTarget.style.background = 'rgba(255,255,255,0.04)'; e.currentTarget.style.color = 'var(--color-text-primary)'; }}
-              onMouseLeave={e => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = 'var(--color-text-secondary)'; }}
-            >{label}</Link>
-          ))}
+            ...(!user ? [
+              { href: `/login?from=${encodeURIComponent(pathname)}`, label: 'Sign In' },
+              { href: `/login?from=${encodeURIComponent(pathname)}`, label: 'Get Started' },
+            ] : []),
+          ].map(({ href, label }) => {
+            const isGetStarted = label === 'Get Started';
+            return isGetStarted ? (
+              <Link key={label} href={href} onClick={() => setMobileOpen(false)}
+                className="btn-primary"
+                style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '0.75rem 0.875rem', borderRadius: 10, fontSize: '0.9rem', fontWeight: 600, marginTop: '0.5rem' }}
+              >{label}</Link>
+            ) : (
+              <Link key={label} href={href} onClick={() => setMobileOpen(false)}
+                style={{ display: 'flex', alignItems: 'center', padding: '0.75rem 0.875rem', borderRadius: 10, textDecoration: 'none', fontSize: '0.9rem', fontWeight: 500, color: 'var(--color-text-secondary)', transition: 'all 0.15s' }}
+                onMouseEnter={e => { e.currentTarget.style.background = 'rgba(255,255,255,0.04)'; e.currentTarget.style.color = 'var(--color-text-primary)'; }}
+                onMouseLeave={e => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = 'var(--color-text-secondary)'; }}
+              >{label}</Link>
+            );
+          })}
         </nav>
 
         <div style={{ padding: '0.75rem', borderTop: '1px solid var(--color-border)' }}>

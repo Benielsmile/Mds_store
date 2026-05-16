@@ -25,21 +25,21 @@ export default async function AdminUsersPage() {
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>{users?.length || 0} registered users from Supabase Auth</p>
         </div>
 
-        <div className="card" style={{ overflow: 'hidden' }}>
+        <div className="card responsive-table-wrap" style={{ overflow: 'hidden' }}>
           <table style={{ width: '100%', borderCollapse: 'collapse' }}>
             <thead>
               <tr style={{ background: 'var(--color-surface-2)' }}>
                 {['User', 'Email', 'Role', 'Orders', 'Joined'].map(h => (
-                  <th key={h} style={{ padding: '0.875rem 1rem', fontSize: '0.75rem', color: 'var(--color-text-muted)', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.06em', textAlign: 'left' }}>{h}</th>
+                  <th key={h} className="admin-th" style={{ padding: '0.875rem 1rem', fontSize: '0.75rem', color: 'var(--color-text-muted)', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.06em', textAlign: 'left', whiteSpace: 'nowrap' }}>{h}</th>
                 ))}
               </tr>
             </thead>
             <tbody>
               {(users as AdminUser[] | null)?.map(user => (
-                <tr key={user.id} style={{ borderBottom: '1px solid var(--color-border)' }}>
-                  <td style={{ padding: '1rem' }}>
+                <tr key={user.id} className="admin-tr" style={{ borderBottom: '1px solid var(--color-border)' }}>
+                  <td className="admin-td" style={{ padding: '1rem' }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '0.875rem' }}>
-                      <div style={{
+                      <div className="admin-user-avatar" style={{
                         width: 38, height: 38, borderRadius: '50%',
                         background: `hsl(${user.email.charCodeAt(0) * 5}, 60%, 35%)`,
                         display: 'flex', alignItems: 'center', justifyContent: 'center',
@@ -53,22 +53,22 @@ export default async function AdminUsersPage() {
                       </div>
                     </div>
                   </td>
-                  <td style={{ padding: '1rem', fontSize: '0.875rem', color: 'var(--color-text-secondary)' }}>
+                  <td className="admin-td" style={{ padding: '1rem', fontSize: '0.875rem', color: 'var(--color-text-secondary)' }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
-                      <Mail size={13} /> {user.email}
+                      <Mail size={13} /> <span className="admin-email-text">{user.email}</span>
                     </div>
                   </td>
-                  <td style={{ padding: '1rem' }}>
-                    <span className={`badge ${user.role === 'admin' ? 'badge-accent' : 'badge-pending'}`} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.3rem' }}>
+                  <td className="admin-td" style={{ padding: '1rem' }}>
+                    <span className={`badge ${user.role === 'admin' ? 'badge-accent' : 'badge-pending'}`} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.3rem', whiteSpace: 'nowrap' }}>
                       {user.role === 'admin' && <Shield size={10} />}
                       {user.role}
                     </span>
                   </td>
-                  <td style={{ padding: '1rem', fontSize: '0.875rem', fontWeight: 600 }}>
+                  <td className="admin-td" style={{ padding: '1rem', fontSize: '0.875rem', fontWeight: 600 }}>
                     {user.orders?.[0]?.count ?? 0}
                   </td>
-                  <td style={{ padding: '1rem', fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                  <td className="admin-td" style={{ padding: '1rem', fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', whiteSpace: 'nowrap' }}>
                       <Calendar size={13} /> {new Date(user.created_at).toLocaleDateString()}
                     </div>
                   </td>

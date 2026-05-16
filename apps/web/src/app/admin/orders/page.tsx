@@ -30,27 +30,27 @@ export default async function AdminOrdersPage() {
           </div>
         </div>
 
-        <div className="card" style={{ overflow: 'hidden' }}>
+        <div className="card responsive-table-wrap" style={{ overflow: 'hidden' }}>
           <table style={{ width: '100%', borderCollapse: 'collapse' }}>
             <thead>
               <tr style={{ background: 'var(--color-surface-2)' }}>
                 {['Order ID', 'Customer', 'Product', 'Amount', 'Status', 'PayPal ID', 'Date'].map(h => (
-                  <th key={h} style={{ padding: '0.875rem 1rem', fontSize: '0.75rem', color: 'var(--color-text-muted)', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.06em', textAlign: 'left', whiteSpace: 'nowrap' }}>{h}</th>
+                  <th key={h} className="admin-th" style={{ padding: '0.875rem 1rem', fontSize: '0.75rem', color: 'var(--color-text-muted)', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.06em', textAlign: 'left', whiteSpace: 'nowrap' }}>{h}</th>
                 ))}
               </tr>
             </thead>
             <tbody>
               {(orders as AdminOrder[] | null)?.map(order => (
-                <tr key={order.id} style={{ borderBottom: '1px solid var(--color-border)' }}>
-                  <td style={{ padding: '1rem', fontSize: '0.78rem', color: 'var(--color-text-muted)', fontFamily: 'monospace' }}>{order.id.slice(0, 12)}...</td>
-                  <td style={{ padding: '1rem', fontSize: '0.875rem' }}>{order.users?.email || '—'}</td>
-                  <td style={{ padding: '1rem', fontSize: '0.875rem', color: 'var(--color-text-secondary)', maxWidth: 200, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{order.products?.title || '—'}</td>
-                  <td style={{ padding: '1rem', fontWeight: 700 }}>${parseFloat(order.amount).toFixed(2)}</td>
-                  <td style={{ padding: '1rem' }}>
+                <tr key={order.id} className="admin-tr" style={{ borderBottom: '1px solid var(--color-border)' }}>
+                  <td className="admin-td admin-td-mono" style={{ padding: '1rem', fontSize: '0.78rem', color: 'var(--color-text-muted)', fontFamily: 'monospace' }}>{order.id.slice(0, 12)}...</td>
+                  <td className="admin-td" style={{ padding: '1rem', fontSize: '0.875rem' }}>{order.users?.email || '—'}</td>
+                  <td className="admin-td" style={{ padding: '1rem', fontSize: '0.875rem', color: 'var(--color-text-secondary)', maxWidth: 200, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{order.products?.title || '—'}</td>
+                  <td className="admin-td" style={{ padding: '1rem', fontWeight: 700, whiteSpace: 'nowrap' }}>${parseFloat(order.amount).toFixed(2)}</td>
+                  <td className="admin-td" style={{ padding: '1rem' }}>
                     <span className={`badge badge-${order.status === 'completed' ? 'success' : order.status === 'failed' ? 'danger' : 'pending'}`}>{order.status}</span>
                   </td>
-                  <td style={{ padding: '1rem', fontSize: '0.75rem', color: 'var(--color-text-muted)', fontFamily: 'monospace' }}>{order.paypal_order_id?.slice(0, 12) || '—'}</td>
-                  <td style={{ padding: '1rem', fontSize: '0.8rem', color: 'var(--color-text-muted)', whiteSpace: 'nowrap' }}>{new Date(order.created_at).toLocaleString()}</td>
+                  <td className="admin-td admin-td-mono" style={{ padding: '1rem', fontSize: '0.75rem', color: 'var(--color-text-muted)', fontFamily: 'monospace' }}>{order.paypal_order_id?.slice(0, 12) || '—'}</td>
+                  <td className="admin-td" style={{ padding: '1rem', fontSize: '0.8rem', color: 'var(--color-text-muted)', whiteSpace: 'nowrap' }}>{new Date(order.created_at).toLocaleString()}</td>
                 </tr>
               ))}
               {(!orders || orders.length === 0) && (
