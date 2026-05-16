@@ -1,0 +1,170 @@
+{
+  "nav": {
+    "products": "Products",
+    "cart": "Cart",
+    "admin": "Admin",
+    "signIn": "Sign In",
+    "getStarted": "Get Started",
+    "signOut": "Sign Out"
+  },
+  "home": {
+    "hero": {
+      "badge": "Premium Digital Products",
+      "title1": "The Best Digital",
+      "title2": "Products for Creators",
+      "subtitle": "Discover premium templates, tools, and assets — built to accelerate your work. Instant digital delivery, one-time purchase.",
+      "shopNow": "Shop Now",
+      "learnMore": "Learn More"
+    },
+    "features": {
+      "title": "Why choose",
+      "title2": "MDS Store",
+      "subtitle": "Everything you need to get premium digital content — securely and instantly.",
+      "instantDelivery": {
+        "title": "Instant Delivery",
+        "desc": "Download your purchase immediately after payment. No waiting, no delays."
+      },
+      "securePayments": {
+        "title": "Secure Payments",
+        "desc": "All transactions processed via PayPal. Your payment info is always safe."
+      },
+      "lifetimeAccess": {
+        "title": "Lifetime Access",
+        "desc": "One-time purchase gives you lifetime access to re-download anytime."
+      }
+    },
+    "featured": {
+      "title": "Featured Products",
+      "subtitle": "Hand-picked digital products to supercharge your workflow",
+      "viewAll": "View All",
+      "placeholder": "Products coming soon. Check back later!"
+    },
+    "cta": {
+      "title": "Ready to level up?",
+      "subtitle": "Join hundreds of creators who use our premium digital products to build faster and ship better.",
+      "button": "Browse All Products"
+    },
+    "stats": {
+      "sold": "Products Sold",
+      "rating": "Avg Rating",
+      "delivery": "Digital Delivery"
+    }
+  },
+  "products": {
+    "title": "All Products",
+    "count": "{count} premium digital products",
+    "noProducts": "No products yet",
+    "noProductsDesc": "Check back soon — new products are being added!",
+    "back": "Back to Products",
+    "reviews": "{count} reviews",
+    "priceSuffix": "USD",
+    "addToCart": "Add to Cart",
+    "addedToCart": "Added to Cart!",
+    "digitalProduct": "Digital Product",
+    "instantDelivery": "Instant digital delivery after purchase",
+    "secureCheckout": "Secure checkout via PayPal",
+    "lifetimeAccess": "Lifetime access & re-downloads",
+    "noImage": "No image"
+  },
+  "cart": {
+    "title": "Shopping Cart",
+    "items": "{count} items",
+    "item": "{count} item",
+    "clearCart": "Clear Cart",
+    "emptyTitle": "Your cart is empty",
+    "emptyDesc": "Looks like you haven't added anything yet.",
+    "browseProducts": "Browse Products",
+    "digitalDelivery": "Digital delivery",
+    "orderSummary": "Order Summary",
+    "subtotal": "Subtotal ({count} items)",
+    "tax": "Tax",
+    "total": "Total",
+    "signInToCheckout": "Sign in to Checkout",
+    "proceedToCheckout": "Proceed to Checkout",
+    "processing": "Processing...",
+    "paymentSuccessful": "Payment Successful!",
+    "paymentDesc": "Your order is complete. You can access your purchases from your orders page.",
+    "continueShopping": "Continue Shopping",
+    "myOrders": "My Orders"
+  },
+  "orders": {
+    "title": "My Orders",
+    "desc": "View your purchased products and downloads.",
+    "noOrders": "No orders yet",
+    "noOrdersDesc": "When you purchase a product, it will appear here.",
+    "browseProducts": "Browse Products",
+    "orderPrefix": "Order",
+    "download": "Download"
+  },
+  "login": {
+    "title": "Welcome back",
+    "subtitle": "Sign in to access your purchases",
+    "checkEmail": "Check your email!",
+    "magicLinkSent": "We sent a magic link to",
+    "google": "Continue with Google",
+    "github": "Continue with GitHub",
+    "orEmail": "or continue with email",
+    "emailLabel": "Email address",
+    "emailPlaceholder": "you@example.com",
+    "sendMagicLink": "Send Magic Link",
+    "sending": "Sending...",
+    "backToStore": "Back to store"
+  },
+  "footer": {
+    "tagline": "Premium digital products for creators and professionals.",
+    "shop": "Shop",
+    "allProducts": "All Products",
+    "newArrivals": "New Arrivals",
+    "bestSellers": "Best Sellers",
+    "support": "Support",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "refunds": "Refunds",
+    "connect": "Connect",
+    "copyright": "All rights reserved.",
+    "madeWith": "Made with",
+    "by": "by the MDS team"
+  },
+  "admin": {
+    "dashboard": "Dashboard",
+    "products": "Products",
+    "orders": "Orders",
+    "users": "Users",
+    "heroSection": "Hero Section",
+    "settings": "Settings",
+    "totalRevenue": "Total Revenue",
+    "totalOrders": "Total Orders",
+    "registered": "Registered",
+    "recentOrders": "Recent Orders",
+    "viewAll": "View all",
+    "toast": {
+      "productUpdated": "Product updated!",
+      "productCreated": "Product created!",
+      "productDeactivated": "Product deactivated",
+      "uploadFailed": "Upload failed: ",
+      "somethingWentWrong": "Something went wrong"
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "search": "Search",
+    "noResults": "No results found",
+    "active": "Active",
+    "inactive": "Inactive",
+    "status": "Status",
+    "created": "Created",
+    "actions": "Actions",
+    "customer": "Customer",
+    "product": "Product",
+    "amount": "Amount",
+    "date": "Date",
+    "email": "Email",
+    "name": "Name",
+    "role": "Role"
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "nav": {
+    "products": "製品",
+    "cart": "カート",
+    "admin": "管理",
+    "signIn": "サインイン",
+    "getStarted": "はじめる",
+    "signOut": "サインアウト"
+  },
+  "home": {
+    "hero": {
+      "badge": "プレミアムデジタル製品",
+      "title1": "クリエイターのための",
+      "title2": "最高のデジタル製品",
+      "subtitle": "プレミアムテンプレート、ツール、アセットを発見。インスタントデジタル配信、一回のお支払い。",
+      "shopNow": "今すぐ購入",
+      "learnMore": "詳細を見る"
+    },
+    "features": {
+      "title": "選ばれる理由",
+      "title2": "MDS Store",
+      "subtitle": "プレミアムデジタルコンテンツを安全かつ即座に。",
+      "instantDelivery": { "title": "即時配信", "desc": "支払い後すぐにダウンロード。待ち時間なし。" },
+      "securePayments": { "title": "安全な支払い", "desc": "すべての取引はPayPal経由。安心してご利用いただけます。" },
+      "lifetimeAccess": { "title": "生涯アクセス", "desc": "一度の購入でいつでも再ダウンロード可能。" }
+    },
+    "featured": {
+      "title": "おすすめ製品",
+      "subtitle": "あなたのワークフローを加速する厳選デジタル製品",
+      "viewAll": "すべて見る",
+      "placeholder": "製品は準備中です。後でチェックしてください！"
+    },
+    "cta": {
+      "title": "次のレベルに進みませんか？",
+      "subtitle": "数百人のクリエイターが当社のプレミアム製品を利用しています。",
+      "button": "製品を探す"
+    },
+    "stats": { "sold": "販売済み製品", "rating": "平均評価", "delivery": "デジタル配信" }
+  },
+  "products": {
+    "title": "すべての製品",
+    "count": "{count}のプレミアムデジタル製品",
+    "noProducts": "まだ製品がありません",
+    "noProductsDesc": "近日公開予定！",
+    "back": "製品一覧に戻る",
+    "reviews": "{count}件のレビュー",
+    "priceSuffix": "USD",
+    "addToCart": "カートに追加",
+    "addedToCart": "カートに追加しました！",
+    "digitalProduct": "デジタル製品",
+    "instantDelivery": "購入後すぐにデジタル配信",
+    "secureCheckout": "PayPalによる安全な決済",
+    "lifetimeAccess": "生涯アクセス＆再ダウンロード",
+    "noImage": "画像なし"
+  },
+  "cart": {
+    "title": "ショッピングカート",
+    "items": "{count}点",
+    "item": "{count}点",
+    "clearCart": "カートを空にする",
+    "emptyTitle": "カートは空です",
+    "emptyDesc": "まだ何も追加されていません。",
+    "browseProducts": "製品を見る",
+    "digitalDelivery": "デジタル配信",
+    "orderSummary": "注文サマリー",
+    "subtotal": "小計 ({count}点)",
+    "tax": "税金",
+    "total": "合計",
+    "signInToCheckout": "サインインして決済",
+    "proceedToCheckout": "決済に進む",
+    "processing": "処理中...",
+    "paymentSuccessful": "支払い完了！",
+    "paymentDesc": "注文が完了しました。購入品は注文ページからアクセスできます。",
+    "continueShopping": "買い物を続ける",
+    "myOrders": "注文履歴"
+  },
+  "orders": {
+    "title": "注文履歴",
+    "desc": "購入した製品とダウンロードを確認できます。",
+    "noOrders": "まだ注文がありません",
+    "noOrdersDesc": "製品を購入すると、ここに表示されます。",
+    "browseProducts": "製品を見る",
+    "orderPrefix": "注文",
+    "download": "ダウンロード"
+  },
+  "login": {
+    "title": "おかえりなさい",
+    "subtitle": "サインインして購入品にアクセス",
+    "checkEmail": "メールを確認してください！",
+    "magicLinkSent": "マジックリンクを送信しました",
+    "google": "Googleで続ける",
+    "github": "GitHubで続ける",
+    "orEmail": "またはメールで続ける",
+    "emailLabel": "メールアドレス",
+    "emailPlaceholder": "you@example.com",
+    "sendMagicLink": "マジックリンクを送信",
+    "sending": "送信中...",
+    "backToStore": "ストアに戻る"
+  },
+  "footer": {
+    "tagline": "クリエイターとプロフェッショナルのためのプレミアムデジタル製品。",
+    "shop": "ショップ",
+    "allProducts": "すべての製品",
+    "newArrivals": "新着",
+    "bestSellers": "ベストセラー",
+    "support": "サポート",
+    "faq": "FAQ",
+    "contact": "お問い合わせ",
+    "refunds": "返金",
+    "connect": "つながる",
+    "copyright": "All rights reserved.",
+    "madeWith": "Made with",
+    "by": "by the MDS team"
+  },
+  "admin": {
+    "dashboard": "ダッシュボード",
+    "products": "製品",
+    "orders": "注文",
+    "users": "ユーザー",
+    "heroSection": "ヒーローセクション",
+    "settings": "設定",
+    "totalRevenue": "総収益",
+    "totalOrders": "注文数",
+    "registered": "登録数",
+    "recentOrders": "最近の注文",
+    "viewAll": "すべて見る",
+    "toast": {
+      "productUpdated": "製品を更新しました！",
+      "productCreated": "製品を作成しました！",
+      "productDeactivated": "製品を無効化しました",
+      "uploadFailed": "アップロード失敗：",
+      "somethingWentWrong": "エラーが発生しました"
+    }
+  },
+  "common": {
+    "loading": "読み込み中...",
+    "error": "エラーが発生しました",
+    "cancel": "キャンセル",
+    "save": "保存",
+    "delete": "削除",
+    "edit": "編集",
+    "search": "検索",
+    "noResults": "結果が見つかりません",
+    "active": "有効",
+    "inactive": "無効",
+    "status": "ステータス",
+    "created": "作成日",
+    "actions": "操作",
+    "customer": "顧客",
+    "product": "製品",
+    "amount": "金額",
+    "date": "日付",
+    "email": "メール",
+    "name": "名前",
+    "role": "ロール"
+  }
+}

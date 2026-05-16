@@ -1,0 +1,157 @@
+{
+  "nav": {
+    "products": "产品",
+    "cart": "购物车",
+    "admin": "管理",
+    "signIn": "登录",
+    "getStarted": "开始",
+    "signOut": "退出"
+  },
+  "home": {
+    "hero": {
+      "badge": "优质数字产品",
+      "title1": "为创作者打造",
+      "title2": "最佳数字产品",
+      "subtitle": "发现优质模板、工具和资源 — 旨在加速您的工作。即时数字交付，一次性购买。",
+      "shopNow": "立即购买",
+      "learnMore": "了解更多"
+    },
+    "features": {
+      "title": "为什么选择",
+      "title2": "MDS Store？",
+      "subtitle": "安全即时地获取优质数字内容所需的一切。",
+      "instantDelivery": { "title": "即时交付", "desc": "付款后立即下载，无需等待。" },
+      "securePayments": { "title": "安全支付", "desc": "所有交易通过PayPal处理，您的支付信息始终安全。" },
+      "lifetimeAccess": { "title": "终身访问", "desc": "一次性购买，终身随时重新下载。" }
+    },
+    "featured": {
+      "title": "精选产品",
+      "subtitle": "精心挑选的数字产品，助您提升工作效率",
+      "viewAll": "查看全部",
+      "placeholder": "产品即将上线，敬请期待！"
+    },
+    "cta": {
+      "title": "准备好升级了吗？",
+      "subtitle": "加入数百位使用我们优质产品的创作者的行列。",
+      "button": "浏览所有产品"
+    },
+    "stats": { "sold": "已售产品", "rating": "平均评分", "delivery": "数字交付" }
+  },
+  "products": {
+    "title": "所有产品",
+    "count": "{count}个优质数字产品",
+    "noProducts": "暂无产品",
+    "noProductsDesc": "请稍后再来 — 新产品正在添加中！",
+    "back": "返回产品列表",
+    "reviews": "{count}条评价",
+    "priceSuffix": "USD",
+    "addToCart": "加入购物车",
+    "addedToCart": "已加入购物车！",
+    "digitalProduct": "数字产品",
+    "instantDelivery": "购买后即时数字交付",
+    "secureCheckout": "通过PayPal安全结账",
+    "lifetimeAccess": "终身访问和重新下载",
+    "noImage": "暂无图片"
+  },
+  "cart": {
+    "title": "购物车",
+    "items": "{count}件商品",
+    "item": "{count}件商品",
+    "clearCart": "清空购物车",
+    "emptyTitle": "购物车是空的",
+    "emptyDesc": "看起来您还没有添加任何商品。",
+    "browseProducts": "浏览产品",
+    "digitalDelivery": "数字交付",
+    "orderSummary": "订单摘要",
+    "subtotal": "小计 ({count}件商品)",
+    "tax": "税费",
+    "total": "总计",
+    "signInToCheckout": "登录后结账",
+    "proceedToCheckout": "前往结账",
+    "processing": "处理中...",
+    "paymentSuccessful": "支付成功！",
+    "paymentDesc": "您的订单已完成。您可以从订单页面访问您的购买内容。",
+    "continueShopping": "继续购物",
+    "myOrders": "我的订单"
+  },
+  "orders": {
+    "title": "我的订单",
+    "desc": "查看您购买的产品和下载。",
+    "noOrders": "暂无订单",
+    "noOrdersDesc": "当您购买产品后，它将显示在这里。",
+    "browseProducts": "浏览产品",
+    "orderPrefix": "订单",
+    "download": "下载"
+  },
+  "login": {
+    "title": "欢迎回来",
+    "subtitle": "登录以访问您的购买内容",
+    "checkEmail": "请查看您的邮箱！",
+    "magicLinkSent": "我们已发送魔法链接至",
+    "google": "使用Google继续",
+    "github": "使用GitHub继续",
+    "orEmail": "或使用邮箱继续",
+    "emailLabel": "邮箱地址",
+    "emailPlaceholder": "you@example.com",
+    "sendMagicLink": "发送魔法链接",
+    "sending": "发送中...",
+    "backToStore": "返回商店"
+  },
+  "footer": {
+    "tagline": "为创作者和专业人士提供的优质数字产品。",
+    "shop": "商店",
+    "allProducts": "所有产品",
+    "newArrivals": "新品上架",
+    "bestSellers": "畅销产品",
+    "support": "支持",
+    "faq": "常见问题",
+    "contact": "联系我们",
+    "refunds": "退款政策",
+    "connect": "连接",
+    "copyright": "All rights reserved.",
+    "madeWith": "Made with",
+    "by": "by the MDS team"
+  },
+  "admin": {
+    "dashboard": "仪表盘",
+    "products": "产品",
+    "orders": "订单",
+    "users": "用户",
+    "heroSection": "Hero区域",
+    "settings": "设置",
+    "totalRevenue": "总收入",
+    "totalOrders": "订单总数",
+    "registered": "已注册",
+    "recentOrders": "最近订单",
+    "viewAll": "查看全部",
+    "toast": {
+      "productUpdated": "产品已更新！",
+      "productCreated": "产品已创建！",
+      "productDeactivated": "产品已停用",
+      "uploadFailed": "上传失败：",
+      "somethingWentWrong": "出了点问题"
+    }
+  },
+  "common": {
+    "loading": "加载中...",
+    "error": "出了点问题",
+    "cancel": "取消",
+    "save": "保存",
+    "delete": "删除",
+    "edit": "编辑",
+    "search": "搜索",
+    "noResults": "未找到结果",
+    "active": "活跃",
+    "inactive": "不活跃",
+    "status": "状态",
+    "created": "创建时间",
+    "actions": "操作",
+    "customer": "客户",
+    "product": "产品",
+    "amount": "金额",
+    "date": "日期",
+    "email": "邮箱",
+    "name": "姓名",
+    "role": "角色"
+  }
+}
