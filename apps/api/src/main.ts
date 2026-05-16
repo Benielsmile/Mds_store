@@ -13,8 +13,8 @@ async function bootstrap() {
     origin: (origin: string | undefined, callback: (err: Error | null, allow?: boolean) => void) => {
       if (!origin) return callback(null, true);
       const allowed: string[] = [
-        'http://localhost:3000',
-        'http://localhost:3001',
+        'https://mds-store-web.vercel.app',
+        'https://mds-store-api.vercel.app/',
         process.env.FRONTEND_URL,
       ].filter((s): s is string => !!s);
       if (allowed.some(a => origin.startsWith(a))) return callback(null, true);
